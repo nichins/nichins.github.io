@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Nichin Sreekantaswamy</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -8,27 +8,28 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+p {margin-top: 2px;margin-bottom: 3px;}
 .w3-bar,button {font-family: "Montserrat", sans-serif}
 </style>
 <body>
     
+
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-teal w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-teal" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="./index.html" class="w3-bar-item w3-button w3-padding-large w3-white">HOME</a>
+    <a href="./index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">HOME</a>
     <a href="./about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">ABOUT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
+    <a href="./portfolio.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">PORTFOLIO</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="./index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="./about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="./portfolio.html" class="w3-bar-item w3-button w3-padding-large">PORTFOLIO</a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
   </div>
 </div>
@@ -48,16 +49,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <h2>Nichin Sreekantaswamy</h2>
           </div> -->
         </div>
+        <img src="./about_files/name_main.png" style="width:100%" alt="Name">
+        
+          
         <div class="w3-container">
-          <img src="./about_files/name.png" style="width:100%" alt="Name">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Electrical Engineer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Scottsdale, AZ</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>nichins@alumni.upenn.edu</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1-267-777-3560</p>
+          <p><i class="fa fa-id-card-o fa-fw w3-small w3-text-teal"></i> Electrical Engineer</p>
+          <p><i class="fa fa-envelope-o fa-fw w3-small w3-text-teal"></i>nichins @ alumni.upenn.edu</p>
+          <p><i class="fa fa-phone fa-fw w3-small w3-text-teal"></i>+1-267-777-3560</p>
           <hr>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Adobe Photoshop</p>
+          <p class="w3-medium"><b><i class="fa fa-usb fa-fw w3-margin-right w3-text-teal"></i>Hardware</b></p>
+          <p>OrCAD schematic </p>
           <p>Photography</p>
           <p>Illustrator</p>
           <p>Media</p>
@@ -77,9 +79,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
     <!-- Right Column -->
     <div class="w3-threequarter">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div>
+          <a href="./about_files/resume.pdf"  target="_blank">
+          <button class="w3-button w3-white w3-border w3-block w3-margin-bottom w3-margin-top">
+            <i class="fa fa-download w3-margin-right"></i>DOWNLOAD RESUME PDF
+          </button>
+          </a>
+        </div>
+        
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+
+        <h2 class="w3-text-grey"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
@@ -100,7 +110,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       </div>
 
       <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <h2 class="w3-text-grey"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>

@@ -1,4 +1,4 @@
-This repo contains my personal website's files and are being hosted by free github.io!
+This repo contains my personal website's files and are being hosted by free on github.io!
  
 Link to the website is: www.nich.in 
 
