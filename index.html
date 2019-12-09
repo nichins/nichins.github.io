@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1 {font-family: "Raleway", sans-serif}
+body,h1 {font-family: "Montserrat", sans-serif}
 body, html {height: 100%}
 .bgimg {
   background-image: url('./index_files/bg.jpg');
@@ -16,16 +18,33 @@ body, html {height: 100%}
 }
 </style>
 <body>
-
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    LOGO
+    
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-teal w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-teal" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="./index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">HOME</a>
+    <a href="./about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">ABOUT</a>
+    <a href="./portfolio.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">PORTFOLIO</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>
   </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="./about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+    <a href="./portfolio.html" class="w3-bar-item w3-button w3-padding-large">PORTFOLIO</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>    
+    
+<!-- Page / Picture Container-->
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white w3-greyscale">
   <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top w3-center">COMING SOON</h1>
+    <h1 class="w3-jumbo w3-animate-top w3-center">NICHIN SREEKANTASWAMY</h1>
+    <!-- <img src="./about_files/name_main.png" style="width:100%" alt="LOGO"> -->
     <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">NICHIN SREEKANTASWAMY
-    <img src="./about_files/name_main.png" style="width:100%" alt="LOGO">  
+    <p class="w3-large w3-center">WEBSITE UNDER CONSTRUCTION  
     </p>
   </div>
 </div>
