@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<title>Indian Number System Converter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('./index_files/bg_white.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+input {
+        border: none;
+        border-bottom: 1px dashed #888;
+        text-align: right;
+        width: 108px;        
+      }
+      div {
+        color: #aaa;
+        margin-bottom: 8px;
+      }
+      .indian {
+        color: black;
+      }
+      .unit {
+        display: inline-block;
+        margin-left: 8px;
+        width: 76px;
+      }
+      .zero {
+        font-size: 14px;
+        margin-left: 8px;
+      }
+</style>
+<body>
+
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-large">
+      <a href="./index.html">Home</a>
+  </div>
+  <div class="w3-display-middle">
+    <h2>Indian Number System Converter</h2>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    
+    <div>
+      <input type="number" divisor="1"></input>
+    </div>
+    <div>
+      <input type="number" divisor="1e3"></input><span class="unit">thousand</span><span class="zero">3 zeros</span>
+    </div>
+    <div class="indian">
+      <input type="number" divisor="1e5"></input><span class="unit">lakh</span><span class="zero">5 zeros</span>
+    </div>
+    <div>
+      <input type="number" divisor="1e6"></input><span class="unit">million</span><span class="zero">6 zeros</span>
+    </div>
+    <div class="indian">
+      <input type="number" divisor="1e7"></input><span class="unit">crore</span><span class="zero">7 zeros</span>
+    </div>
+    <div>
+      <input type="number" divisor="1e9"></input><span class="unit">billion</span><span class="zero">9 zeros</span>
+    </div>
+    <div>
+      <input type="number" divisor="1e12"></input><span class="unit">trillion</span><span class="zero">12 zeros</span>
+    </div>
+    <div class="indian">
+      <input type="number" divisor="1e12"></input><span class="unit">lakh crore</span><span class="zero">12 zeros</span>
+    </div>
+    
+    <script>
+      const inputs = document.querySelectorAll("input");
+      
+      inputs.forEach((i0, i) => {
+        i0.addEventListener("keyup", ({ target }) => {
+          const v = +target.value * +target.getAttribute("divisor");
+          inputs.forEach(i1 => {
+            i1.value = v / +i1.getAttribute("divisor");
+          });
+        });
+
+        if (i === 0) i0.focus();
+      });
+    </script>
+    
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Inspired by <a href="https://bl.ocks.org/HarryStevens/36cc304aa90fcab19d246eaebd24d8b2" target="_blank">this</a> code block, released under the GNU General Public License.
+  </div>
+</div>
+
+</body>
+</html>
